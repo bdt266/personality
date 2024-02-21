@@ -1,0 +1,32 @@
+body {
+  background-color: #4e8cf7;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+h1 {
+  color: #6a0dad;
+}
+p {
+  color: #1cac78;
+}
+a button {
+  background-color: #1cac78;
+  cursor:pointer;
+}
+
+#logo {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  cursor: pointer;
+}
+
+.tabs {
+  text-align: center;
+}
+
+a {
+  display: contents;
+  vertical-align: top;
+}

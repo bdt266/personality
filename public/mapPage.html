@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    
+    <style> #map { height: 350px }</style>
+  </head>
+
+  <body style="background-color: #1a1a1a; color: white;">
+    <a href=index.html>
+      <img src=Personalcity_Logo-removebg-preview.png alt="Personalcity Logo" id="logo">
+    </a>
+    <script src="script.js"></script>
+    <br> <br>
+    <div class="tabs">
+      <a href=index.html><button>Home</button></a>
+      <a href=personalitySurveyPage.html><button>Personality Survey Page</button></a>
+      <a href=mapPage.html><button>Map Page</button></a>
+      <a href=aboutPage.html><button>About Page</button></a>
+    </div>
+    <br> <br>
+    <br>
+    
+    <div id="map"></div>
+
+    <script>
+      // WILL NEED TO LOOK INTO GEO CODING WITH ADDRESS/SEARCH
+      // square brackets = lat, long; second number is zoom level
+      var map = L.map('map').setView([28.01431454708716, -82.38576885384897], 12);
+
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 15,
+          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(map);
+
+      L.marker([28.037606, -82.420627]).addTo(map).bindPopup("Busch Gardens");
+      L.marker([28.055810, -82.428673]).addTo(map).bindPopup("Pho Quyen");
+      L.marker([27.976014975931964, -82.34139978238066]).addTo(map).bindPopup("K1 Speed");
+    </script>
+  </body>
+</html>
