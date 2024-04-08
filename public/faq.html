@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>FAQ Page</title>
+</head>
+<body>
+  <section>
+    <h1 class="title">Frequently Asked Questions (FAQ)</h1>
+  </section>
+  <script src="./app.js"></script>
+      
+    <div class="faq-item">
+        <div class="question">Q: What is HTML?</div>
+        <div class="answer">A: HTML stands for HyperText Markup Language. It is the standard markup language for creating web pages and web applications.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">Q: What is CSS?</div>
+        <div class="answer">A: CSS stands for Cascading Style Sheets. It is used to style the presentation of HTML elements on a web page.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">Q: What is JavaScript?</div>
+        <div class="answer">A: JavaScript is a programming language that enables interactive elements and dynamic content on web pages.</div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const questions = document.querySelectorAll(".question");
+
+            questions.forEach(question => {
+                question.addEventListener("click", function() {
+                    const answer = this.nextElementSibling;
+                    answer.style.display = answer.style.display === "block" ? "none" : "block";
+                });
+            });
+        });
+    </script>
+</body>
+</html>
