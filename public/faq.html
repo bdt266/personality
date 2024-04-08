@@ -3,31 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQs</title>
-    <link rel="stylesheet" href="./style.css">
     <title>FAQ Page</title>
+    <style>
+       * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box; 
+       }
+        body {}
+        section {
+            min-height: 100vh;
+            wdith: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .title {}
+        .faq-item {
+            max-width: 700px;
+            margin-top: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #fff;
+            cursor: pointer;
+            align-items: center;
+        }
+        .question {
+            display: flex;
+            justify-content: space-between;
+        }
+        .question h3 {
+            font-size: 1.8rem;
+        }
+        .answer {}
+        .answer p {
+            padding-top: 1rem;
+            line-height: 1.6;
+            font-size: 1.4rem;
+        }
+    </style>
 </head>
 <body>
   <section>
-    <h1 class="title">Frequently Asked Questions (FAQ)</h1>
-  </section>
-  <script src="./app.js"></script>
-      
-    <div class="faq-item">
-        <div class="question">Q: What is HTML?</div>
-        <div class="answer">A: HTML stands for HyperText Markup Language. It is the standard markup language for creating web pages and web applications.</div>
-    </div>
+        <h1 class="title">Frequently Asked Questions</h1>
+        <div class="faq-item">
+             <div class="question">
+                <h3>What is personality and how do we assess it?</h3>
+                
+            </div>
+            <div class="answer">
+                <p></p>
+            </div>
+        </div>
 
     <div class="faq-item">
-        <div class="question">Q: What is CSS?</div>
-        <div class="answer">A: CSS stands for Cascading Style Sheets. It is used to style the presentation of HTML elements on a web page.</div>
-    </div>
+             <div class="question">
+                <h3>What were Personalicity's Considerations?</h3>
+                
+            </div>
+            <div class="answer">
+                <p></p>
+            </div>
+        </div>
 
     <div class="faq-item">
-        <div class="question">Q: What is JavaScript?</div>
-        <div class="answer">A: JavaScript is a programming language that enables interactive elements and dynamic content on web pages.</div>
-    </div>
-
+             <div class="question">
+                <h3>What is personality and how do we assess it?</h3>
+                
+            </div>
+            <div class="answer">
+                <p></p>
+            </div>
+        </div>
+</section>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const questions = document.querySelectorAll(".question");
