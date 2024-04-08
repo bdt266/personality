@@ -42,8 +42,34 @@
             line-height: 1.6;
             font-size: 1.4rem;
         }
-        #postQuestion {
+        .faq-input {
             margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .faq-input input[type="text"] {
+            flex: 1;
+            padding: 8px;
+            border: none;
+            border-radius: 3px;
+            outline: none;
+        }
+        .faq-input button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 8px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .faq-input button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
@@ -62,8 +88,7 @@
   <section>
         <h1 class="title">Frequently Asked Questions</h1>
         <br> <br>
-        <div id="postQuestion">
-            <h2>Post a Question</h2>
+        <div class="faq-input">
             <input type="text" id="questionInput" placeholder="Enter your question">
             <button id="submitQuestion">Submit</button>
         </div>
